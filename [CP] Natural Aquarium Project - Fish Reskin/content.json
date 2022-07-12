@@ -1,0 +1,1706 @@
+{
+    "Format": "1.23.0",
+    "Changes": [
+      {
+      "Action": "EditData",
+      "Target": "Data/AquariumFish",
+      "Entries": {
+         "720": "38/ground/38/39 38/39 38/39 38",
+         "716": "1060/crawl/1060/1061 1060/1061 1060/1061 1060",
+         "149": "1062/ground/1062/1063 1064 1062/1063 1064 1062/1063 1064 1062",
+         "707": "48/ground",
+         "128": "0/fish",
+         "715": "36/crawl/36/37 36/37 36/37 36",
+         "708": "49/ground",
+         "734": "50/ground",
+         "837": "57/ground"
+      },
+      },
+      {
+      "Action": "EditData",
+      "LogName": "Vanilla Foraging Tweaks Data",
+      "Target": "Data/Locations",
+      "TextOperations": [
+       {
+         "Operation": "Append",
+         "Target": ["Fields", "Beach", 0],//spring forage 
+         "Value": "717 .5",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Beach", 3],//winter forage 
+         "Value": "717 .5",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Forest", 0],//spring forage 
+         "Value": "721 .5",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Forest", 1],//summer forage 
+         "Value": "721 .5",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Forest", 2],//fall forage 
+         "Value": "721 .5",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Mountain", 0],//spring forage 
+         "Value": "721 .5",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Mountain", 1],//summer forage 
+         "Value": "721 .5",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+      {
+         "Operation": "Append",
+         "Target": ["Fields", "Mountain", 2],//fall forage 
+         "Value": "721 .5",
+         "Delimiter": " " // if there are already values, add a space between them and the new ones
+      },
+   ]
+   },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/sea_urchin_aquarium.png",
+      "ToArea": {
+         "X": 144,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/sea_urchin.png",
+      "ToArea": {
+         "X": 208,
+         "Y": 256,
+         "Width": 16,
+         "Height": 16
+      },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/shrimp_aquarium.png",
+      "ToArea": {
+         "X": 432,
+         "Y": 48,
+         "Width": 48,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/shrimp.png",
+      "ToArea": {
+         "X": 0,
+         "Y": 480,
+         "Width": 16,
+         "Height": 16 
+      },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/stonefish_aquarium.png",
+      "ToArea": {
+         "X": 96,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/stonefish.png",
+      "ToArea": {
+         "X": 224,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/salmon_aquarium.png",
+      "ToArea": {
+         "X": 192,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/salmon.png",
+      "ToArea": {
+         "X": 304,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/sunfish_aquarium.png",
+      "ToArea": {
+         "X": 336,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/sunfish.png",
+      "ToArea": {
+         "X": 16,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/lionfish_aquarium.png",
+      "ToArea": {
+         "X": 408,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/lionfish.png",
+      "ToArea": {
+         "X": 336,
+         "Y": 544,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/lobster_aquarium.png",
+      "ToArea": {
+         "X": 384,
+         "Y": 48,
+         "Width": 48,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/lobster.png",
+      "ToArea": {
+         "X": 304,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/crayfish_aquarium.png",
+      "ToArea": {
+         "X": 0,
+         "Y": 2544,
+         "Width": 48,
+         "Height": 48
+      },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/crayfish.png",
+      "ToArea": {
+         "X": 320,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+      },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/discus_aquarium.png",
+      "ToArea": {
+         "X": 432,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/discus.png",
+      "ToArea": {
+         "X": 352,
+         "Y": 544,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/blobfish_aquarium.png",
+      "ToArea": {
+         "X": 192,
+         "Y": 144,
+         "Width": 48,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/blobfish.png",
+      "ToArea": {
+         "X": 128,
+         "Y": 528,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/angler_aquarium.png",
+      "ToArea": {
+         "X": 144,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/angler.png",
+      "ToArea": {
+         "X": 256,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/mrsangler_aquarium.png",
+      "ToArea": {
+         "X": 192,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/mrsangler.png",
+      "ToArea": {
+         "X": 176,
+         "Y": 592,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/squid_aquarium.png",
+      "ToArea": {
+         "X": 0,
+         "Y": 144,
+         "Width": 120,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/squid.png",
+      "ToArea": {
+         "X": 112,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/midnight_squid_aquarium.png",
+      "ToArea": {
+         "X": 360,
+         "Y": 144,
+         "Width": 120,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/midnight_squid.png",
+      "ToArea": {
+         "X": 96,
+         "Y": 528,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/bream_aquarium.png",
+      "ToArea": {
+         "X": 96,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/bream.png",
+      "ToArea": {
+         "X": 192,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/tilapia_aquarium.png",
+      "ToArea": {
+         "X": 72,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/tilapia.png",
+      "ToArea": {
+         "X": 80,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/octopus_aquarium.png",
+      "ToArea": {
+         "X": 48,
+         "Y": 2544,
+         "Width": 72,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/octopus.png",
+      "ToArea": {
+         "X": 80,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/dorado_aquarium.png",
+      "ToArea": {
+         "X": 120,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/dorado.png",
+      "ToArea": {
+         "X": 128,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/smallmouth_bass_aquarium.png",
+      "ToArea": {
+         "X": 144,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/smallmouth_bass.png",
+      "ToArea": {
+         "X": 272,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/largemouth_bass_aquarium.png",
+      "ToArea": {
+         "X": 120,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/largemouth_bass.png",
+      "ToArea": {
+         "X": 256,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/legend_aquarium.png",
+      "ToArea": {
+         "X": 216,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/legend.png",
+      "ToArea": {
+         "X": 304,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/legend_two_aquarium.png",
+      "ToArea": {
+         "X": 216,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/legend_two.png",
+      "ToArea": {
+         "X": 192,
+         "Y": 592,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/eel_aquarium.png",
+      "ToArea": {
+         "X": 408,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/eel.png",
+      "ToArea": {
+         "X": 64,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/carp_aquarium.png",
+      "ToArea": {
+         "X": 264,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/carp.png",
+      "ToArea": {
+         "X": 352,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/anchovy_aquarium.png",
+      "ToArea": {
+         "X": 24,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/anchovy.png",
+      "ToArea": {
+         "X": 144,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/lava_eel_aquarium.png",
+      "ToArea": {
+         "X": 192,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/lava_eel.png",
+      "ToArea": {
+         "X": 288,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/sea_cucumber_aquarium.png",
+      "ToArea": {
+         "X": 24,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/sea_cucumber.png",
+      "ToArea": {
+         "X": 160,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/super_cucumber_aquarium.png",
+      "ToArea": {
+         "X": 48,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/super_cucumber.png",
+      "ToArea": {
+         "X": 176,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/rainbow_trout_aquarium.png",
+      "ToArea": {
+         "X": 168,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/rainbow_trout.png",
+      "ToArea": {
+         "X": 288,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/tiger_trout_aquarium.png",
+      "ToArea": {
+         "X": 24,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/tiger_trout.png",
+      "ToArea": {
+         "X": 48,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/red_snapper_aquarium.png",
+      "ToArea": {
+         "X": 456,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/red_snapper.png",
+      "ToArea": {
+         "X": 96,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/catfish_aquarium.png",
+      "ToArea": {
+         "X": 288,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/catfish.png",
+      "ToArea": {
+         "X": 368,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/bullhead_aquarium.png",
+      "ToArea": {
+         "X": 48,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/bullhead.png",
+      "ToArea": {
+         "X": 64,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/sardine_aquarium.png",
+      "ToArea": {
+         "X": 72,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/sardine.png",
+      "ToArea": {
+         "X": 176,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/snail_aquarium.png",
+      "ToArea": {
+         "X": 120,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/snail.png",
+      "ToArea": {
+         "X": 16,
+         "Y": 480,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+        {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/shad_aquarium.png",
+      "ToArea": {
+         "X": 168,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/shad.png",
+      "ToArea": {
+         "X": 160,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+        {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/chub_aquarium.png",
+      "ToArea": {
+         "X": 96,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/chub.png",
+      "ToArea": {
+         "X": 96,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+        {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/herring_aquarium.png",
+      "ToArea": {
+         "X": 384,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/herring.png",
+      "ToArea": {
+         "X": 48,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+
+
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/periwinkle_aquarium.png",
+      "ToArea": {
+         "X": 96,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/periwinkle.png",
+      "ToArea": {
+         "X": 32,
+         "Y": 480,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/mussel_aquarium.png",
+      "ToArea": {
+         "X": 72,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/mussel.png",
+      "ToArea": {
+         "X": 368,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/tuna_aquarium.png",
+      "ToArea": {
+         "X": 48,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/tuna.png",
+      "ToArea": {
+         "X": 160,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/albacore_aquarium.png",
+      "ToArea": {
+         "X": 144,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/albacore.png",
+      "ToArea": {
+         "X": 144,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/crimsonfish_aquarium.png",
+      "ToArea": {
+         "X": 120,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/crimsonfish.png",
+      "ToArea": {
+         "X": 240,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/son_of_crimsonfish_aquarium.png",
+      "ToArea": {
+         "X": 168,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/son_of_crimsonfish.png",
+      "ToArea": {
+         "X": 160,
+         "Y": 592,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/lingcod_aquarium.png",
+      "ToArea": {
+         "X": 192,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/lingcod.png",
+      "ToArea": {
+         "X": 176,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/crab_aquarium.png",
+      "ToArea": {
+         "X": 120,
+         "Y": 144,
+         "Width": 72,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/crab.png",
+      "ToArea": {
+         "X": 336,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/perch_aquarium.png",
+      "ToArea": {
+         "X": 240,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/perch.png",
+      "ToArea": {
+         "X": 336,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+           {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/red_mullet_aquarium.png",
+      "ToArea": {
+         "X": 360,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/red_mullet.png",
+      "ToArea": {
+         "X": 32,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+           {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/clam_aquarium.png",
+      "ToArea": {
+         "X": 0,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/clam.png",
+      "ToArea": {
+         "X": 192,
+         "Y": 240,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+           {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/pufferfish_aquarium.png",
+      "ToArea": {
+         "X": 0,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/pufferfish.png",
+      "ToArea": {
+         "X": 128,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/ice_pip_aquarium.png",
+      "ToArea": {
+         "X": 168,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/ice_pip.png",
+      "ToArea": {
+         "X": 272,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+            {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/slimejack_aquarium.png",
+      "ToArea": {
+         "X": 288,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/slimejack.png",
+      "ToArea": {
+         "X": 64,
+         "Y": 528,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+            {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/radioactive_carp_aquarium.png",
+      "ToArea": {
+         "X": 240,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/radioactive_carp.png",
+      "ToArea": {
+         "X": 208,
+         "Y": 592,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+            {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/mutant_carp_aquarium.png",
+      "ToArea": {
+         "X": 264,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/mutant_carp.png",
+      "ToArea": {
+         "X": 160,
+         "Y": 448,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/mutant_carp.png",
+      "ToArea": {
+         "X": 176,
+         "Y": 448,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+            {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/glacierfish_aquarium.png",
+      "ToArea": {
+         "X": 240,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/glacierfish.png",
+      "ToArea": {
+         "X": 112,
+         "Y": 512,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+            {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/glacierfish_jr_aquarium.png",
+      "ToArea": {
+         "X": 264,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/glacierfish_jr.png",
+      "ToArea": {
+         "X": 224,
+         "Y": 592,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/halibut_aquarium.png",
+      "ToArea": {
+         "X": 216,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/halibut.png",
+      "ToArea": {
+         "X": 192,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+                 {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/flounder_aquarium.png",
+      "ToArea": {
+         "X": 336,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/flounder.png",
+      "ToArea": {
+         "X": 48,
+         "Y": 176,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+                 {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/pike_aquarium.png",
+      "ToArea": {
+         "X": 312,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/pike.png",
+      "ToArea": {
+         "X": 0,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+                 {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/walleye_aquarium.png",
+      "ToArea": {
+         "X": 216,
+         "Y": 0,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/walleye.png",
+      "ToArea": {
+         "X": 320,
+         "Y": 80,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+                 {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/sturgeon_aquarium.png",
+      "ToArea": {
+         "X": 0,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/sturgeon.png",
+      "ToArea": {
+         "X": 32,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+                 {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/cockle_aquarium.png",
+      "ToArea": {
+         "X": 48,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/cockle.png",
+      "ToArea": {
+         "X": 352,
+         "Y": 464,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+                 {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/oyster_aquarium.png",
+      "ToArea": {
+         "X": 24,
+         "Y": 192,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/oyster.png",
+      "ToArea": {
+         "X": 48,
+         "Y": 480,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/ghostfish_aquarium.png",
+      "ToArea": {
+         "X": 72,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/ghostfish.png",
+      "ToArea": {
+         "X": 192,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+       {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/midnight_carp_aquarium.png",
+      "ToArea": {
+         "X": 360,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/midnight_carp.png",
+      "ToArea": {
+         "X": 80,
+         "Y": 176,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+                    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/void_salmon_aquarium.png",
+      "ToArea": {
+         "X": 264,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/void_salmon.png",
+      "ToArea": {
+         "X": 48,
+         "Y": 528,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+                    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/woodskip_aquarium.png",
+      "ToArea": {
+         "X": 240,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/woodskip.png",
+      "ToArea": {
+         "X": 224,
+         "Y": 480,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+                    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/spookfish_aquarium.png",
+      "ToArea": {
+         "X": 336,
+         "Y": 96,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/spookfish.png",
+      "ToArea": {
+         "X": 112,
+         "Y": 528,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+                    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/scorpion_carp_aquarium.png",
+      "ToArea": {
+         "X": 312,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/scorpion_carp.png",
+      "ToArea": {
+         "X": 336,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+                    {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/sandfish_aquarium.png",
+      "ToArea": {
+         "X": 288,
+         "Y": 48,
+         "Width": 24,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/sandfish.png",
+      "ToArea": {
+         "X": 320,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/stone_aquarium.png",
+      "ToArea": {
+         "X": 0,
+         "Y": 272,
+         "Width": 48,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/seaweed_aquarium.png",
+      "ToArea": {
+         "X": 0,
+         "Y": 288,
+         "Width": 48,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/seaweed.png",
+      "ToArea": {
+         "X": 128,
+         "Y": 96,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/coral_aquarium.png",
+      "ToArea": {
+         "X": 0,
+         "Y": 256,
+         "Width": 80,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/coral.png",
+      "ToArea": {
+         "X": 144,
+         "Y": 256,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "LooseSprites/AquariumFish",
+      "FromFile": "assets/stingray_aquarium.png",
+      "ToArea": {
+         "X": 240,
+         "Y": 144,
+         "Width": 120,
+         "Height": 48
+         },
+      },
+      {
+      "Action": "EditImage",
+      "Target": "Maps/SpringObjects",
+      "FromFile": "assets/stingray.png",
+      "ToArea": {
+         "X": 320,
+         "Y": 544,
+         "Width": 16,
+         "Height": 16
+         },
+      },
+   ]
+}
