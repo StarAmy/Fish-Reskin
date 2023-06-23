@@ -1,10 +1,15 @@
 {
     "Format": "1.23.0",
      "ConfigSchema": {
-         "Replace Object Sprites": {
-            "AllowValues": "True, False",
-            "Default": "True"
-        },
+        "Replace Object Sprites": {"AllowValues": "True, False", "Default": "True"},
+        "Replace Aquarium Animations": {"AllowValues": "true, false",
+        "Default": "true"},
+        "Replace SVE Aquarium Animations": {"AllowValues": "true, false",
+        "Default": "true"},
+        "Replace SVE Object Sprites": {"AllowValues": "true, false",
+        "Default": "true"},
+        "Replace Festival Moonlight Jellyfish": {"AllowValues": "true, false",
+        "Default": "true"},
      },
     "Changes": [
       {
@@ -22,6 +27,23 @@
          "837": "57/ground"
       },
       },
+      {
+   "Action": "EditData",
+   "Target": "Data/AquariumFish",
+   "Entries": {
+   "{{spacechase0.JsonAssets/ObjectId:Kittyfish}}": "2240/fish",
+   "{{spacechase0.JsonAssets/ObjectId:Big Conch}}": "2241/static",
+   "{{spacechase0.JsonAssets/ObjectId:Dried Sand Dollar}}": "2242/static",
+   "{{spacechase0.JsonAssets/ObjectId:Dulse Seaweed}}": "2243/static",
+   "{{spacechase0.JsonAssets/ObjectId:Frog}}": "2244/static",
+
+    },
+    "When": { 
+         "Replace SVE Aquarium Animations": "true",
+          "HasMod": "FlashShifter.JA.SVE",
+          "HasMod": "spacechase0.JsonAssets",                        
+                                                            }
+},
       {
       "Action": "EditData",
       "LogName": "Vanilla Foraging Tweaks Data",
@@ -77,6 +99,20 @@
       },
    ]
    },
+    {
+      "Action": "EditImage",
+      "Target": "Maps/Festivals",
+      "FromFile": "assets/festival_jellies.png",
+      "ToArea": {
+         "X": 256,
+         "Y": 16,
+         "Width": 96,
+         "Height": 32,
+      },
+      "When":{ 
+            "Replace Festival Moonlight Jellyfish": true
+        }
+      },
       {
       "Action": "EditImage",
       "Target": "LooseSprites/AquariumFish",
@@ -1928,5 +1964,940 @@
             "Replace Object Sprites": true
         }
       },
+
+
+
+      //SVE reskins
+
+
+
+{
+            "LogName": "Big Conch",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Big Conch}}",
+            "FromFile": "assets/conch.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Big Conch}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Big Conch}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+      {
+            "LogName": "Radioactive Bass",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Radioactive Bass}}",
+            "FromFile": "assets/radioactive_bass.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Radioactive Bass}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Radioactive Bass}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+      {
+            "LogName": "Snatcher Worm",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Snatcher Worm}}",
+            "FromFile": "assets/worm.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Snatcher Worm}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Snatcher Worm}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+      {
+            "LogName": "Dried Sand Dollar",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Dried Sand Dollar}}",
+            "FromFile": "assets/sand_dollar.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Dried Sand Dollar}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Dried Sand Dollar}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+      {
+            "LogName": "Dulse Seaweed",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Dulse Seaweed}}",
+            "FromFile": "assets/dulse_seaweed.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Dulse Seaweed}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Dulse Seaweed}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+      {
+            "LogName": "Meteor Carp",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Meteor Carp}}",
+            "FromFile": "assets/meteor_carp.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Meteor Carp}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Meteor Carp}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+      {
+            "LogName": "Torpedo Trout",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Torpedo Trout}}",
+            "FromFile": "assets/torpedo_trout.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Torpedo Trout}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Torpedo Trout}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+      {
+            "LogName": "Meteor Carp",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Meteor Carp}}",
+            "FromFile": "assets/meteor_carp.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Meteor Carp}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Meteor Carp}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+{
+            "LogName": "Goldenfish",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Goldenfish}}",
+            "FromFile": "assets/goldenfish.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Goldenfish}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Goldenfish}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+      {
+            "LogName": "Undeadfish",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Undeadfish}}",
+            "FromFile": "assets/undeadfish.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Undeadfish}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Undeadfish}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+ {
+            "LogName": "Gemfish",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Gemfish}}",
+            "FromFile": "assets/gemfish.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Gemfish}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Gemfish}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+ {
+            "LogName": "Bonefish",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Bonefish}}",
+            "FromFile": "assets/bonefish.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Bonefish}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Bonefish}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+ {
+            "LogName": "Daggerfish",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Daggerfish}}",
+            "FromFile": "assets/daggerfish.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Daggerfish}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Daggerfish}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+      {
+            "LogName": "Grass Carp",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Grass Carp}}",
+            "FromFile": "assets/grass_carp.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Grass Carp}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Grass Carp}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+
+   {
+            "LogName": "Bull Trout",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Bull Trout}}",
+            "FromFile": "assets/bull_trout.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Bull Trout}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Bull Trout}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+
+      {
+            "LogName": "Void Eel",
+            "Action": "EditImage",
+            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Void Eel}}",
+            "FromFile": "assets/void_eel.png",
+            "FromArea": {
+                   "X": 0,
+                   "Y": 0,
+                   "Width": 16,
+                   "Height": 16
+               },
+               "ToArea": {
+                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Void Eel}}",
+                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Void Eel}}",
+                   "Width": 16,
+                   "Height": 16
+           },
+           "When": { 
+           "Replace SVE Object Sprites": "true",
+           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                    }
+      },
+                
+                {
+                    "LogName": "Minnow",
+                    "Action": "EditImage",
+                    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Minnow}}",
+                    "FromFile": "assets/minnow.png",
+                    "FromArea": {
+                           "X": 0,
+                           "Y": 0,
+                           "Width": 16,
+                           "Height": 16
+                       },
+                       "ToArea": {
+                           "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Minnow}}",
+                           "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Minnow}}",
+                           "Width": 16,
+                           "Height": 16
+                   },
+                   "When": { 
+                   "Replace SVE Object Sprites": "true",
+                   "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                            }
+                        },
+                        {
+                            "LogName": "Baby Lunaloo",
+                            "Action": "EditImage",
+                            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Baby Lunaloo}}",
+                            "FromFile": "assets/baby_lunaloo.png",
+                            "FromArea": {
+                                   "X": 0,
+                                   "Y": 0,
+                                   "Width": 16,
+                                   "Height": 16
+                               },
+                               "ToArea": {
+                                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Baby Lunaloo}}",
+                                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Baby Lunaloo}}",
+                                   "Width": 16,
+                                   "Height": 16
+                           },
+                           "When": { 
+                           "Replace SVE Object Sprites": "true",
+                           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                    }
+                                },
+                                {
+                                    "LogName": "Lunaloo",
+                                    "Action": "EditImage",
+                                    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Lunaloo}}",
+                                    "FromFile": "assets/lunaloo.png",
+                                    "FromArea": {
+                                           "X": 0,
+                                           "Y": 0,
+                                           "Width": 16,
+                                           "Height": 16
+                                       },
+                                       "ToArea": {
+                                           "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Lunaloo}}",
+                                           "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Lunaloo}}",
+                                           "Width": 16,
+                                           "Height": 16
+                                   },
+                                   "When": { 
+                                   "Replace SVE Object Sprites": "true",
+                                   "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                            }
+                                        },
+                                        {
+                                            "LogName": "Starfish",
+                                            "Action": "EditImage",
+                                            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Starfish}}",
+                                            "FromFile": "assets/starfish.png",
+                                            "FromArea": {
+                                                   "X": 0,
+                                                   "Y": 0,
+                                                   "Width": 16,
+                                                   "Height": 16
+                                               },
+                                               "ToArea": {
+                                                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Starfish}}",
+                                                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Starfish}}",
+                                                   "Width": 16,
+                                                   "Height": 16
+                                           },
+                                           "When": { 
+                                           "Replace SVE Object Sprites": "true",
+                                           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                    }
+                                                },
+                                                {
+                                                    "LogName": "Clownfish",
+                                                    "Action": "EditImage",
+                                                    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Clownfish}}",
+                                                    "FromFile": "assets/clownfish.png",
+                                                    "FromArea": {
+                                                           "X": 0,
+                                                           "Y": 0,
+                                                           "Width": 16,
+                                                           "Height": 16
+                                                       },
+                                                       "ToArea": {
+                                                           "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Clownfish}}",
+                                                           "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Clownfish}}",
+                                                           "Width": 16,
+                                                           "Height": 16
+                                                   },
+                                                   "When": { 
+                                                   "Replace SVE Object Sprites": "true",
+                                                   "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                            }
+                                                        },
+                                                        {
+                                                            "LogName": "Frog",
+                                                            "Action": "EditImage",
+                                                            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Frog}}",
+                                                            "FromFile": "assets/frog.png",
+                                                            "FromArea": {
+                                                                   "X": 0,
+                                                                   "Y": 0,
+                                                                   "Width": 16,
+                                                                   "Height": 16
+                                                               },
+                                                               "ToArea": {
+                                                                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Frog}}",
+                                                                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Frog}}",
+                                                                   "Width": 16,
+                                                                   "Height": 16
+                                                           },
+                                                           "When": { 
+                                                           "Replace SVE Object Sprites": "true",
+                                                           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "LogName": "Sea Sponge",
+                                                                    "Action": "EditImage",
+                                                                    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Sea Sponge}}",
+                                                                    "FromFile": "assets/sponge.png",
+                                                                    "FromArea": {
+                                                                           "X": 0,
+                                                                           "Y": 0,
+                                                                           "Width": 16,
+                                                                           "Height": 16
+                                                                       },
+                                                                       "ToArea": {
+                                                                           "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Sea Sponge}}",
+                                                                           "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Sea Sponge}}",
+                                                                           "Width": 16,
+                                                                           "Height": 16
+                                                                   },
+                                                                   "When": { 
+                                                                   "Replace SVE Object Sprites": "true",
+                                                                   "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "LogName": "Shiny Lunaloo",
+                                                                            "Action": "EditImage",
+                                                                            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Shiny Lunaloo}}",
+                                                                            "FromFile": "assets/shiny_lunaloo.png",
+                                                                            "FromArea": {
+                                                                                   "X": 0,
+                                                                                   "Y": 0,
+                                                                                   "Width": 16,
+                                                                                   "Height": 16
+                                                                               },
+                                                                               "ToArea": {
+                                                                                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Shiny Lunaloo}}",
+                                                                                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Shiny Lunaloo}}",
+                                                                                   "Width": 16,
+                                                                                   "Height": 16
+                                                                           },
+                                                                           "When": { 
+                                                                           "Replace SVE Object Sprites": "true",
+                                                                           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "LogName": "Razor Trout",
+                                                                                    "Action": "EditImage",
+                                                                                    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Razor Trout}}",
+                                                                                    "FromFile": "assets/razor_trout.png",
+                                                                                    "FromArea": {
+                                                                                           "X": 0,
+                                                                                           "Y": 0,
+                                                                                           "Width": 16,
+                                                                                           "Height": 16
+                                                                                       },
+                                                                                       "ToArea": {
+                                                                                           "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Razor Trout}}",
+                                                                                           "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Razor Trout}}",
+                                                                                           "Width": 16,
+                                                                                           "Height": 16
+                                                                                   },
+                                                                                   "When": { 
+                                                                                   "Replace SVE Object Sprites": "true",
+                                                                                   "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                                                            }
+                                                                                        },
+                                                                                        {
+                                                                                            "LogName": "Seahorse",
+                                                                                            "Action": "EditImage",
+                                                                                            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Seahorse}}",
+                                                                                            "FromFile": "assets/seahorse.png",
+                                                                                            "FromArea": {
+                                                                                                   "X": 0,
+                                                                                                   "Y": 0,
+                                                                                                   "Width": 16,
+                                                                                                   "Height": 16
+                                                                                               },
+                                                                                               "ToArea": {
+                                                                                                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Seahorse}}",
+                                                                                                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Seahorse}}",
+                                                                                                   "Width": 16,
+                                                                                                   "Height": 16
+                                                                                           },
+                                                                                           "When": { 
+                                                                                           "Replace SVE Object Sprites": "true",
+                                                                                           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "LogName": "Puppyfish",
+                                                                                                    "Action": "EditImage",
+                                                                                                    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Puppyfish}}",
+                                                                                                    "FromFile": "assets/puppyfish.png",
+                                                                                                    "FromArea": {
+                                                                                                           "X": 0,
+                                                                                                           "Y": 0,
+                                                                                                           "Width": 16,
+                                                                                                           "Height": 16
+                                                                                                       },
+                                                                                                       "ToArea": {
+                                                                                                           "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Puppyfish}}",
+                                                                                                           "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Puppyfish}}",
+                                                                                                           "Width": 16,
+                                                                                                           "Height": 16
+                                                                                                   },
+                                                                                                   "When": { 
+                                                                                                   "Replace SVE Object Sprites": "true",
+                                                                                                   "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                                                                            }
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "LogName": "Kittyfish",
+                                                                                                            "Action": "EditImage",
+                                                                                                            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Kittyfish}}",
+                                                                                                            "FromFile": "assets/kittyfish.png",
+                                                                                                            "FromArea": {
+                                                                                                                   "X": 0,
+                                                                                                                   "Y": 0,
+                                                                                                                   "Width": 16,
+                                                                                                                   "Height": 16
+                                                                                                               },
+                                                                                                               "ToArea": {
+                                                                                                                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Kittyfish}}",
+                                                                                                                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Kittyfish}}",
+                                                                                                                   "Width": 16,
+                                                                                                                   "Height": 16
+                                                                                                           },
+                                                                                                           "When": { 
+                                                                                                           "Replace SVE Object Sprites": "true",
+                                                                                                           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                                                                                    }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "LogName": "Butterfish",
+                                                                                                                    "Action": "EditImage",
+                                                                                                                    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Butterfish}}",
+                                                                                                                    "FromFile": "assets/butterfish.png",
+                                                                                                                    "FromArea": {
+                                                                                                                           "X": 0,
+                                                                                                                           "Y": 0,
+                                                                                                                           "Width": 16,
+                                                                                                                           "Height": 16
+                                                                                                                       },
+                                                                                                                       "ToArea": {
+                                                                                                                           "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Butterfish}}",
+                                                                                                                           "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Butterfish}}",
+                                                                                                                           "Width": 16,
+                                                                                                                           "Height": 16
+                                                                                                                   },
+                                                                                                                   "When": { 
+                                                                                                                   "Replace SVE Object Sprites": "true",
+                                                                                                                   "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                                                                                            }
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "LogName": "King Salmon",
+                                                                                                                            "Action": "EditImage",
+                                                                                                                            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:King Salmon}}",
+                                                                                                                            "FromFile": "assets/king_salmon.png",
+                                                                                                                            "FromArea": {
+                                                                                                                                   "X": 0,
+                                                                                                                                   "Y": 0,
+                                                                                                                                   "Width": 16,
+                                                                                                                                   "Height": 16
+                                                                                                                               },
+                                                                                                                               "ToArea": {
+                                                                                                                                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:King Salmon}}",
+                                                                                                                                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:King Salmon}}",
+                                                                                                                                   "Width": 16,
+                                                                                                                                   "Height": 16
+                                                                                                                           },
+                                                                                                                           "When": { 
+                                                                                                                           "Replace SVE Object Sprites": "true",
+                                                                                                                           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                                                                                                                            }
+                                                                                                                                                        },
+
+                                                                                                                  {
+                                                                                                                            "LogName": "Water Grub",
+                                                                                                                            "Action": "EditImage",
+                                                                                                                            "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Water Grub}}",
+                                                                                                                            "FromFile": "assets/grub.png",
+                                                                                                                            "FromArea": {
+                                                                                                                                   "X": 0,
+                                                                                                                                   "Y": 0,
+                                                                                                                                   "Width": 16,
+                                                                                                                                   "Height": 16
+                                                                                                                               },
+                                                                                                                               "ToArea": {
+                                                                                                                                   "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Water Grub}}",
+                                                                                                                                   "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Water Grub}}",
+                                                                                                                                   "Width": 16,
+                                                                                                                                   "Height": 16
+                                                                                                                           },
+                                                                                                                           "When": { 
+                                                                                                                           "Replace SVE Object Sprites": "true",
+                                                                                                                           "HasMod": "FlashShifter.JA.SVE",            "HasMod": "spacechase0.JsonAssets", 
+
+                                                                                                                                                            }
+                                                                                                                           },
+                                                                                                   
+
+ {
+            "LogName": "Pelican Town Fish",
+            "Action": "EditImage",
+            "Target": "LooseSprites/AquariumFish",
+            "FromFile": "assets/SVE Aquarium Sprites.png",
+            "ToArea": {
+                "X": 288,
+                "Y": 192,
+                "Width": 192,
+                "Height": 48
+           },
+           "When": { 
+           "Replace SVE Aquarium Animations": "true",
+           "HasMod": "FlashShifter.StardewValleyExpandedCP"
+               }
+       },
+       {
+        "LogName": "Ginger Island Fish",
+        "Action": "EditImage",
+        "Target": "LooseSprites/AquariumFish",
+        "FromFile": "assets/SVE Aquarium Sprites_2.png",
+        "ToArea": {
+            "X": 264,
+            "Y": 240,
+            "Width": 120,
+            "Height": 48
+       },
+       "When": { 
+       "Replace SVE Aquarium Animations": "true",
+       "HasMod": "FlashShifter.StardewValleyExpandedCP"
+           }
+   },
+    {
+    "LogName": "Daggerfish Aquarium",
+    "Action": "EditImage",
+    "Target": "LooseSprites/AquariumFish",
+    "FromFile": "assets/SVE_AquariumFish_Daggerfish.png",
+    "ToArea": {
+        "X": 384,
+        "Y": 240,
+        "Width": 24,
+        "Height": 48
+   },
+   "When": { 
+   "Replace SVE Aquarium Animations": "true",
+   "HasMod": "FlashShifter.StardewValleyExpandedCP"
+       }
+    },
+ {
+    "LogName": "River Fish Aquarium",
+    "Action": "EditImage",
+    "Target": "LooseSprites/AquariumFish",
+    "FromFile": "assets/SVE_AquariumFish_SecretWoods.png",
+    "ToArea": {
+        "X": 120,
+        "Y": 240,
+        "Width": 48,
+        "Height": 48
+   },
+   "When": { 
+   "Replace SVE Aquarium Animations": "true",
+   "HasMod": "FlashShifter.StardewValleyExpandedCP"
+       }
+    },
+     {
+    "LogName": "Water Grub Aquarium",
+    "Action": "EditImage",
+    "Target": "LooseSprites/AquariumFish",
+    "FromFile": "assets/SVE_AquariumFish_WaterGrub.png",
+    "ToArea": {
+        "X": 96,
+        "Y": 240,
+        "Width": 24,
+        "Height": 48
+   },
+   "When": { 
+   "Replace SVE Aquarium Animations": "true",
+   "HasMod": "FlashShifter.StardewValleyExpandedCP"
+       }
+    },
+     {
+    "LogName": "Weird Fish Aquarium",
+    "Action": "EditImage",
+    "Target": "LooseSprites/AquariumFish",
+    "FromFile": "assets/SVE_AquariumFish_WeirdOnes.png",
+    "ToArea": {
+        "X": 408,
+        "Y": 240,
+        "Width": 72,
+        "Height": 48
+   },
+   "When": { 
+   "Replace SVE Aquarium Animations": "true",
+   "HasMod": "FlashShifter.StardewValleyExpandedCP"
+       }
+    },
+     {
+    "LogName": "New Fish Aquarium",
+    "Action": "EditImage",
+    "Target": "LooseSprites/AquariumFish",
+    "FromFile": "assets/SVE_AquariumFish_SpriteSpring.png",
+    "ToArea": {
+        "X": 168,
+        "Y": 240,
+        "Width": 96,
+        "Height": 48
+   },
+   "When": { 
+   "Replace SVE Aquarium Animations": "true",
+   "HasMod": "FlashShifter.StardewValleyExpandedCP"
+       }
+    },
+    {
+    "LogName": "Snatcher Worm Aquarium",
+    "Action": "EditImage",
+    "Target": "LooseSprites/AquariumFish",
+    "FromFile": "assets/SVE_AquariumFish_Worm.png",
+    "ToArea": {
+        "X": 384,
+        "Y": 96,
+        "Width": 24,
+        "Height": 48
+   },
+   "When": { 
+   "Replace SVE Aquarium Animations": "true",
+   "HasMod": "FlashShifter.StardewValleyExpandedCP"
+       }
+    },
+
+    {
+    "LogName": "Kittyfish Aquarium",
+    "Action": "EditImage",
+    "Target": "LooseSprites/AquariumFish",
+    "FromFile": "assets/kittyfish_aquarium.png",
+    "ToArea": {
+        "X": 0,
+        "Y": 5376,
+        "Width": 24,
+        "Height": 48
+   },
+   "When": { 
+   "Replace SVE Aquarium Animations": "true",
+   "HasMod": "FlashShifter.StardewValleyExpandedCP"
+       }
+    },
+    {
+    "LogName": "Big Conch Aquarium",
+    "Action": "EditImage",
+    "Target": "LooseSprites/AquariumFish",
+    "FromFile": "assets/conch_aquarium.png",
+    "ToArea": {
+        "X": 24,
+        "Y": 5376,
+        "Width": 24,
+        "Height": 48
+   },
+   "When": { 
+   "Replace SVE Aquarium Animations": "true",
+   "HasMod": "FlashShifter.StardewValleyExpandedCP"
+       }
+    },
+    {
+    "LogName": "Sand Dollar Aquarium",
+    "Action": "EditImage",
+    "Target": "LooseSprites/AquariumFish",
+    "FromFile": "assets/sand_dollar_aquarium.png",
+    "ToArea": {
+        "X": 48,
+        "Y": 5376,
+        "Width": 24,
+        "Height": 48
+   },
+   "When": { 
+   "Replace SVE Aquarium Animations": "true",
+   "HasMod": "FlashShifter.StardewValleyExpandedCP"
+       }
+    },
+    {
+    "LogName": "Dulse Seaweed Aquarium",
+    "Action": "EditImage",
+    "Target": "LooseSprites/AquariumFish",
+    "FromFile": "assets/dulse_seaweed_aquarium.png",
+    "ToArea": {
+        "X": 72,
+        "Y": 5376,
+        "Width": 24,
+        "Height": 48
+   },
+   "When": { 
+   "Replace SVE Aquarium Animations": "true",
+   "HasMod": "FlashShifter.StardewValleyExpandedCP"
+       }
+    },
+     {
+    "LogName": "SVE Frog Aquarium",
+    "Action": "EditImage",
+    "Target": "LooseSprites/AquariumFish",
+    "FromFile": "assets/frog_aquarium.png",
+    "ToArea": {
+        "X": 96,
+        "Y": 5376,
+        "Width": 24,
+        "Height": 48
+   },
+   "When": { 
+   "Replace SVE Aquarium Animations": "true",
+   "HasMod": "FlashShifter.StardewValleyExpandedCP"
+       }
+    },
    ]
 }
